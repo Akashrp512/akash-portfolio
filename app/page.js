@@ -232,9 +232,8 @@ const Home = () => {
 
 export default Home;
 
-
-
-{/* <style>
+{
+  /* <style>
 .libutton {
   display: flex;
   flex-direction: column;
@@ -253,4 +252,5 @@ export default Home;
 </style>
 <a class="libutton" href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=akashrp" target="_blank">Follow on LinkedIn</a>
 
- */}
+ */
+}
