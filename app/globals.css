@@ -2,41 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap');
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 0, 201, 255; /* Blue */
-  --background-end-rgb: 74, 0, 224; /* Purple */
+  --foreground-dark-rgb: 33, 37, 41; /* Dark Grey for Paragraphs */
+  --foreground-light-rgb: 255, 255, 255; /* White for Titles */
+  --background-primary-rgb: 10, 45, 79; /* Primary Background Color */
+  --accent-green-rgb: 102, 187, 106; /* Coding Green */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 72, 61, 139; /* Darker purple */
+    --foreground-dark-rgb: 220, 220, 220; /* Light Grey for Paragraphs in Dark Mode */
+    --foreground-light-rgb: 255, 255, 255; /* White for Titles in Dark Mode */
+    --background-primary-rgb: 0, 0, 0; /* Darker background for dark mode */
+    --accent-green-rgb: 70, 130, 90; /* Softer Coding Green for Dark Mode */
   }
 }
 
 body {
   font-family: 'Inter', sans-serif;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-dark-rgb));
+  background-color: rgb(var(--background-primary-rgb)); /* Single Background Color */
 }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+  color: rgb(var(--foreground-light-rgb)); /* Titles in White */
 }
 
 p {
-  color:#94a3b8;
+  color: #94a3b8; /* Grey for Paragraphs */
 }
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Utility classes for the accent green color */
+  .text-accent-green {
+    color: rgb(var(--accent-green-rgb));
+  }
+
+  .bg-accent-green {
+    background-color: rgb(var(--accent-green-rgb));
+  }
+
+  .border-accent-green {
+    border-color: rgb(var(--accent-green-rgb));
   }
 }
