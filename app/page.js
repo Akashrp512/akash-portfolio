@@ -23,7 +23,7 @@ const Home = () => {
           </p>
           <nav className=" hidden lg:block ">
             <ul className="mt-16 w-max">
-              <li className="flex gap-2 items-center justify-center">
+              <li>
                 <Link
                   href="#about"
                   className="flex items-center py-3 text-slate-400 hover:text-slate-50 hover:text-xl"
@@ -47,62 +47,65 @@ const Home = () => {
                   Projects
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#skills"
                   className="flex items-center py-3 text-slate-400 hover:text-slate-50 hover:text-xl"
                 >
                   Skills
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
         <ul className="ml-1 mt-8 flex items-center">
-          <li className="mr-5 text-xs shrink-0 cursor-pointer">
+          <li className="mr-5 text-xs shrink-0 hover:cursor-pointer">
             <Link
               href="https://github.com/Akashrp512"
               className="block hover:text-slate-200"
               aria-label="GitHub (opens in a new tab)"
               target="_blank"
-            ></Link>
-            <span className="sr-only">Github</span>
-            <Image
-              src="/assets/github.svg"
-              width={24}
-              height={24}
-              alt="Github Icon"
-            />
+            >
+              <span className="sr-only">Github</span>
+              <Image
+                src="/assets/github.svg"
+                width={24}
+                height={24}
+                alt="Github Icon"
+              />
+            </Link>
           </li>
-          <li className="mr-5 text-xs shrink-0">
+          <li className="mr-5 text-xs shrink-0 hover:cursor-pointer">
             <Link
               href="https://www.linkedin.com/in/akashrp/"
               className="block hover:text-slate-200"
               aria-label="LinkedIn (opens in a new tab)"
               target="_blank"
-            ></Link>
-            <span className="sr-only">LinkedIn</span>
-            <Image
-              src="/assets/linkedin.svg"
-              width={24}
-              height={24}
-              alt="LinkedIn Icon"
-            />
+            >
+              <span className="sr-only">LinkedIn</span>
+              <Image
+                src="/assets/linkedin.svg"
+                width={24}
+                height={24}
+                alt="LinkedIn Icon"
+              />
+            </Link>
           </li>
-          <li className="mr-5 text-xs shrink-0">
+          <li className="mr-5 text-xs shrink-0 hover:cursor-pointer">
             <Link
               href="https://www.instagram.com/aakash.rp/"
               className="block hover:text-slate-200"
               aria-label="Instagram (opens in a new tab)"
               target="_blank"
-            ></Link>
-            <span className="sr-only">Instagram</span>
-            <Image
-              src="/assets/instagram.svg"
-              width={24}
-              height={24}
-              alt="Instagram Icon"
-            />
+            >
+              <span className="sr-only">Instagram</span>
+              <Image
+                src="/assets/instagram.svg"
+                width={24}
+                height={24}
+                alt="Instagram Icon"
+              />
+            </Link>
           </li>
         </ul>
       </header>
@@ -183,7 +186,7 @@ const Home = () => {
                     <div>
                       <Link
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        href="/"
+                        href="https://www.thinkjs.co/"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
@@ -253,7 +256,7 @@ const Home = () => {
                     <div>
                       <Link
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        href="/"
+                        href="https://www.way2agribusiness.com/"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
@@ -309,8 +312,8 @@ const Home = () => {
                 target="_blank"
               >
                 <span>
-                  View Full
-                  <span className="inline-block">{`Resume`}</span>
+                  View Full Resume
+                  {/* <span className="inline-block">{`Resume`}</span> */}
                 </span>
               </Link>
             </div>
@@ -347,6 +350,12 @@ const Home = () => {
                       features for waste collection, user and collector
                       management, notifications, and multi-country support.
                     </p>
+                    {/* <a
+                      className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                      href="/"
+                    >
+                      <span>70k Users</span>
+                    </a> */}
                   </div>
                   <Image
                     src="/assets/youcan-admin-dashboard.png"
@@ -418,6 +427,18 @@ const Home = () => {
                 </div>
               </li>
             </ul>
+            {/* <div className="mt-12">
+              <Link
+                className="inline-flex items-baseline leading-tight  hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
+                href="/projects"
+                target="_blank"
+              >
+                <span>
+                  View Full
+                  <span className="inline-block">Project Archive</span>
+                </span>
+              </Link>
+            </div> */}
           </div>
         </section>
         {/* <section
