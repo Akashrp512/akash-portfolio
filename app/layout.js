@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Montserrat, Roboto } from "next/font/google";
 import "./globals.css";
 
@@ -8,7 +9,6 @@ export const metadata = {
   title: "Akash RP | Full-Stack Developer: React, Node.js, and AWS",
   description: "Showcasing the skills and projects of Akash RP",
 };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
@@ -17,6 +17,7 @@ export default function RootLayout({ children }) {
       >
         {children}
       </body>
+      <GoogleAnalytics gaId="G-RDC7YQWX8W" />
     </html>
   );
 }
