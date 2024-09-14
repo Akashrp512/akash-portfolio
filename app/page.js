@@ -11,29 +11,25 @@ const Home = () => {
           <h1 className="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl">
             Akash R P
           </h1>
+
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
             Full-Stack Developer: React, Node.js, and AWS
           </h2>
           <p className="mt-4 max-w-xs leading-normal text-slate-400">
-            I'm a full-stack developer with expertise in React, Node.js, and
-            cloud services like AWS. I build responsive and scalable web
-            applications.
+            I'm a dedicated full-stack developer with a strong focus on building
+            scalable and efficient web applications using React, Node.js, and
+            AWS. I love crafting responsive interfaces and robust backend
+            systems.
           </p>
           <nav className=" hidden lg:block ">
             <ul className="mt-16 w-max">
-              <li className="flex gap-2 items-center justify-center">
+              <li>
                 <Link
                   href="#about"
                   className="flex items-center py-3 text-slate-400 hover:text-slate-50 hover:text-xl"
                 >
                   About
                 </Link>
-                {/* <Image
-                  src="/assets/about.svg"
-                  width={20}
-                  height={20}
-                  className="mt-2"
-                /> */}
               </li>
               <li>
                 <Link
@@ -51,59 +47,65 @@ const Home = () => {
                   Projects
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="#skills"
                   className="flex items-center py-3 text-slate-400 hover:text-slate-50 hover:text-xl"
                 >
                   Skills
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
         <ul className="ml-1 mt-8 flex items-center">
-          <li className="mr-5 text-xs shrink-0 cursor-pointer">
+          <li className="mr-5 text-xs shrink-0 hover:cursor-pointer">
             <Link
               href="https://github.com/Akashrp512"
               className="block hover:text-slate-200"
               aria-label="GitHub (opens in a new tab)"
-            ></Link>
-            <span className="sr-only">Github</span>
-            <Image
-              src="/assets/github.svg"
-              width={24}
-              height={24}
-              alt="Github Icon"
-            />
+              target="_blank"
+            >
+              <span className="sr-only">Github</span>
+              <Image
+                src="/assets/github.svg"
+                width={24}
+                height={24}
+                alt="Github Icon"
+              />
+            </Link>
           </li>
-          <li className="mr-5 text-xs shrink-0">
+          <li className="mr-5 text-xs shrink-0 hover:cursor-pointer">
             <Link
               href="https://www.linkedin.com/in/akashrp/"
               className="block hover:text-slate-200"
               aria-label="LinkedIn (opens in a new tab)"
-            ></Link>
-            <span className="sr-only">LinkedIn</span>
-            <Image
-              src="/assets/linkedin.svg"
-              width={24}
-              height={24}
-              alt="LinkedIn Icon"
-            />
+              target="_blank"
+            >
+              <span className="sr-only">LinkedIn</span>
+              <Image
+                src="/assets/linkedin.svg"
+                width={24}
+                height={24}
+                alt="LinkedIn Icon"
+              />
+            </Link>
           </li>
-          <li className="mr-5 text-xs shrink-0">
+          <li className="mr-5 text-xs shrink-0 hover:cursor-pointer">
             <Link
               href="https://www.instagram.com/aakash.rp/"
               className="block hover:text-slate-200"
               aria-label="Instagram (opens in a new tab)"
-            ></Link>
-            <span className="sr-only">Instagram</span>
-            <Image
-              src="/assets/instagram.svg"
-              width={24}
-              height={24}
-              alt="Instagram Icon"
-            />
+              target="_blank"
+            >
+              <span className="sr-only">Instagram</span>
+              <Image
+                src="/assets/instagram.svg"
+                width={24}
+                height={24}
+                alt="Instagram Icon"
+              />
+            </Link>
           </li>
         </ul>
       </header>
@@ -120,43 +122,45 @@ const Home = () => {
           </div>
           <div>
             <p className="mb-4">
-              Back in 2012, I decided to try my hand at creating custom Tumblr
-              themes and tumbled head first into the rabbit hole of coding and
-              web development. Fast-forward to today, and I’ve had the privilege
-              of building software for an
+              My journey into web development began in 2023 when I transitioned
+              from working on college projects to taking on real-world software
+              development challenges. Over time, I've worked on various
+              projects, including building donation websites, managing complex
+              e-commerce systems, and collaborating with startups and digital
+              project studios.
               <Link
-                href="/"
+                href="https://www.youthoppia.com/"
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               >
-                Advertising agency
+                Waste Management App
               </Link>
               , a{" "}
               <Link
-                href="/"
+                href="https://www.meticulousbeaver.com/"
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
               >
-                Start up
+                Wedding Planner E-commerce
               </Link>
               , and a{" "}
               <Link
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
-                href="/"
+                href="https://www.rkctrust.com/"
               >
-                Digital project studio
+                Donation Campaign
               </Link>
             </p>
             <p className="mb-4">
-              My main focus these days is building accessible user interfaces
-              for our customers at Klaviyo. I most enjoy building software in
-              the sweet spot where design and engineering meet — things that
-              look good but are also built well under the hood. In my free time,
-              I've also released an online video course that covers everything
-              you need to know to build a web app with the Spotify API.
+              Currently, I specialize in full-stack development, crafting
+              engaging frontend experiences with React while architecting
+              powerful backend solutions using Node.js. I am passionate about
+              creating software that is not only functional but also delivers an
+              intuitive and seamless user experience.
             </p>
             <p className="mb-4">
-              When I’m not at the computer, I’m usually rock climbing, reading,
-              hanging out with my wife and two cats, or running around Hyrule
-              searching for Korok seeds K o r o k s e e d s .
+              When I’m not coding, I enjoy keeping up with the latest technology
+              trends, experimenting with new tools and attending tech meetups.
+              In my free time, you can find me reading, exploring new recipes,
+              or watching drama or action movies.
             </p>
           </div>
         </section>
@@ -182,19 +186,26 @@ const Home = () => {
                     <div>
                       <Link
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        href="/"
+                        href="https://www.thinkjs.co/"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
-                          Senior Frontend Engineer, Accessibility ·
-                          <span className="inline-block"> Klaviyo (icon)</span>
+                          Associate Software Engineer
+                          <span className="inline-block mt-3 text-zinc-400">
+                            {" "}
+                            ThinkJS Pvt Ltd, Bangalore
+                          </span>
                           <p className="mt-2 text-sm leading-normal">
-                            Build and maintain critical components used to
-                            construct Klaviyo’s frontend, across the whole
-                            product. Work closely with cross-functional teams,
-                            including developers, designers, and product
-                            managers, to implement and advocate for best
-                            practices in web accessibility.
+                            Developed the backend of a waste management app
+                            using Node.js and PostgreSQL, integrating PayPal for
+                            payment handling. Built a Next.js-based donation
+                            campaign website with Tailwind CSS for UI and Redux
+                            for state management. Developed backend services for
+                            an inventory management system using NextJS and Zoho
+                            One for streamlined operations. Created an admin
+                            portal for a ride-hailing app (MyCommute), handling
+                            passenger management, driver onboarding, and data
+                            analytics.
                           </p>
                           <ul className="mt-2 flex flex-wrap">
                             <li className="mr-1.5 mt-2">
@@ -205,6 +216,85 @@ const Home = () => {
                             <li className="mr-1.5 mt-2">
                               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                                 TypeScript
+                              </div>
+                            </li>
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                Nodejs
+                              </div>
+                            </li>
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                Express
+                              </div>
+                            </li>
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                Postgres / MySQL
+                              </div>
+                            </li>
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                React
+                              </div>
+                            </li>
+                          </ul>
+                        </span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li className="mb-12">
+                <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
+                    2023 — 2024
+                  </header>
+                  <div className="z-10 sm:col-span-6">
+                    <h3 className="font-medium leading-snug text-slate-200"></h3>
+                    <div>
+                      <Link
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        href="https://www.way2agribusiness.com/"
+                      >
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>
+                          Full-Stack Developer Intern{" "}
+                          <span className="inline-block mt-3 text-zinc-400">
+                            {" "}
+                            Way2agribusiness India Pvt Ltd, Bangalore
+                          </span>
+                          <p className="mt-2 text-sm leading-normal">
+                            Migrated a PHP-based website to a modern
+                            Django-React (Next.js) stack, enhancing scalability
+                            and user experience. Built a MERN stack e-commerce
+                            app for agricultural products, significantly
+                            improving digital sales channels. Deployed multiple
+                            websites on DigitalOcean, optimizing for uptime and
+                            performance. Developed SEO-friendly Next.js
+                            applications, increasing web traffic and boosting
+                            visibility.
+                          </p>
+                          <ul className="mt-2 flex flex-wrap">
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                Javascript
+                              </div>
+                            </li>
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                NextJS
+                              </div>
+                            </li>
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                Django
+                              </div>
+                            </li>
+                            <li className="mr-1.5 mt-2">
+                              <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
+                                MongoDB
                               </div>
                             </li>
                           </ul>
@@ -218,11 +308,12 @@ const Home = () => {
             <div className="mt-12">
               <Link
                 className="inline-flex items-baseline leading-tight  hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
-                href="/presume.pdf"
+                href="/resume.pdf"
+                target="_blank"
               >
                 <span>
-                  View Full
-                  <span className="inline-block">Résumé (Icon)</span>
+                  View Full Resume
+                  {/* <span className="inline-block">{`Resume`}</span> */}
                 </span>
               </Link>
             </div>
@@ -245,23 +336,29 @@ const Home = () => {
                   <div className="z-10 sm:order-2 sm:col-span-6">
                     <h3>
                       <Link
-                        href="/"
+                        href="https://www.youthoppia.com/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                        <span>Build a Spotify Connected</span>{" "}
-                        <span className="inline-block">App (Icon)</span>
+                        <span>{`Waste Management App`}</span>
+                        {/* <span className="inline-block">{` App (Icon)`}</span> */}
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Video course that teaches how to build a web app with the
-                      Spotify Web API. Topics covered include the principles of
-                      REST APIs, user auth flows, Node, Express, React, Styled
-                      Components, and more.
+                      Developed the backend using Node.js and PostgreSQL.
+                      Integrated PayPal for wallet and payment processing. Built
+                      features for waste collection, user and collector
+                      management, notifications, and multi-country support.
                     </p>
+                    {/* <a
+                      className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                      href="/"
+                    >
+                      <span>70k Users</span>
+                    </a> */}
                   </div>
                   <Image
-                    src="/assets/course-card.webp"
+                    src="/assets/youcan-admin-dashboard.png"
                     alt="image"
                     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                     width={200}
@@ -275,23 +372,53 @@ const Home = () => {
                   <div className="z-10 sm:order-2 sm:col-span-6">
                     <h3>
                       <Link
-                        href="/"
+                        href="https://www.meticulousbeaver.com/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                        <span>Build a Spotify Connected</span>{" "}
-                        <span className="inline-block">App (Icon)</span>
+                        <span>Wedding Planner E-commerce Website</span>{" "}
+                        {/* <span className="inline-block">App (Icon)</span> */}
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Video course that teaches how to build a web app with the
-                      Spotify Web API. Topics covered include the principles of
-                      REST APIs, user auth flows, Node, Express, React, Styled
-                      Components, and more.
+                      Built backend services using Next.js and Zoho One for
+                      inventory management. Integrated Razorpay for secure
+                      online payments and used DynamoDB for storing
+                      Zoho-generated tokens.
                     </p>
                   </div>
                   <Image
-                    src="/assets/course-card.webp"
+                    src="/assets/meteculous-beaver.png"
+                    alt="image"
+                    className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                    width={200}
+                    height={150}
+                  />
+                </div>
+              </li>
+              <li className="mb-12">
+                <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div className="z-10 sm:order-2 sm:col-span-6">
+                    <h3>
+                      <Link
+                        href="https://www.rkctrust.com/"
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                      >
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>Donation Campaign Website (RKCTRUST)</span>{" "}
+                        {/* <span className="inline-block">App (Icon)</span> */}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 text-sm leading-normal">
+                      Created a Next.js donation website for clinics and
+                      hospitals. Developed the admin portal for managing
+                      donation campaigns, ensuring efficient management and
+                      accessibility.
+                    </p>
+                  </div>
+                  <Image
+                    src="/assets/rkct-hero.png"
                     alt="image"
                     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                     width={200}
@@ -300,9 +427,21 @@ const Home = () => {
                 </div>
               </li>
             </ul>
+            {/* <div className="mt-12">
+              <Link
+                className="inline-flex items-baseline leading-tight  hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
+                href="/projects"
+                target="_blank"
+              >
+                <span>
+                  View Full
+                  <span className="inline-block">Project Archive</span>
+                </span>
+              </Link>
+            </div> */}
           </div>
         </section>
-        <section
+        {/* <section
           id="blogs"
           className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
         >
@@ -343,8 +482,8 @@ const Home = () => {
               </li>
             </ul>
           </div>
-        </section>
-        <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+        </section> */}
+        {/* <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
           <p>
             Loosely designed in {""}
             <Link
@@ -357,7 +496,7 @@ const Home = () => {
             truly. Built with Next.js and Tailwind CSS, deployed with Vercel.
             All text is set in the Inter typeface.
           </p>
-        </footer>
+        </footer> */}
       </main>
     </div>
   );
