@@ -122,15 +122,16 @@ const Home = () => {
           </div>
           <div>
             <p className="mb-4">
-              My journey into web development began in 2023 when I transitioned
-              from working on college projects to taking on real-world software
-              development challenges. Over time, I've worked on various
-              projects, including building donation websites, managing complex
-              e-commerce systems, and collaborating with startups and digital
-              project studios.
+              My journey into web development began in 2023 when I shifted from
+              working on college projects to tackling real-world software
+              development challenges. Since then, I've worked on diverse
+              projects such as the Waste Management App, Wedding Planner
+              E-commerce, and Donation Campaign Websites
               <Link
                 href="https://www.youthoppia.com/"
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+                aria-label="Waste management App"
+                target="_blank"
               >
                 Waste Management App
               </Link>
@@ -138,6 +139,8 @@ const Home = () => {
               <Link
                 href="https://www.meticulousbeaver.com/"
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+                aria-label="Wedding planner website"
+                target="_blank"
               >
                 Wedding Planner E-commerce
               </Link>
@@ -145,22 +148,21 @@ const Home = () => {
               <Link
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
                 href="https://www.rkctrust.com/"
+                aria-label="Donation campaign Website"
+                target="_blank"
               >
                 Donation Campaign
               </Link>
             </p>
             <p className="mb-4">
-              Currently, I specialize in full-stack development, crafting
-              engaging frontend experiences with React while architecting
-              powerful backend solutions using Node.js. I am passionate about
-              creating software that is not only functional but also delivers an
-              intuitive and seamless user experience.
+              I am dedicated to full-stack development, where I create dynamic,
+              responsive frontend interfaces with React while architecting
+              backend systems with Node.js and PostgreSQL.
             </p>
             <p className="mb-4">
-              When I’m not coding, I enjoy keeping up with the latest technology
-              trends, experimenting with new tools and attending tech meetups.
-              In my free time, you can find me reading, exploring new recipes,
-              or watching drama or action movies.
+              When I’m not coding, I stay up to date with the latest technology
+              trends, experiment with new tools, attend tech meetups, or enjoy
+              reading, cooking, and watching drama or action movies.
             </p>
           </div>
         </section>
@@ -179,7 +181,7 @@ const Home = () => {
                 <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                   <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-                    2024 — Present
+                    June 2023 — Present
                   </header>
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200"></h3>
@@ -187,6 +189,8 @@ const Home = () => {
                       <Link
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                         href="https://www.thinkjs.co/"
+                        aria-label="Thinkjs Pvt Ltd Website"
+                        target="_blank"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
@@ -196,17 +200,65 @@ const Home = () => {
                             ThinkJS Pvt Ltd, Bangalore
                           </span>
                           <p className="mt-2 text-sm leading-normal">
-                            Developed the backend of a waste management app
-                            using Node.js and PostgreSQL, integrating PayPal for
-                            payment handling. Built a Next.js-based donation
-                            campaign website with Tailwind CSS for UI and Redux
-                            for state management. Developed backend services for
-                            an inventory management system using NextJS and Zoho
-                            One for streamlined operations. Created an admin
-                            portal for a ride-hailing app (MyCommute), handling
-                            passenger management, driver onboarding, and data
-                            analytics.
+                            Developed scalable backend systems for the waste
+                            management platform, integrating payment gateways
+                            like PayPal and leveraging AWS services (S3, SES,
+                            SNS, Lambda, EC2, DynamoDB). Optimized performance
+                            with advanced features like spatial proximity search
+                            and real-time notifications, collaborating with
+                            cross-functional teams to ensure seamless
+                            integration and timely delivery.
                           </p>
+                          <ul
+                            className="mt-2 flex flex-wrap"
+                            area-label="Related links"
+                          >
+                            <li className="mr-4">
+                              <Link
+                                className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                                href="https://www.youthoppia.com"
+                              >
+                                <Image
+                                  src="/assets/icons/link.svg"
+                                  alt="Link Icon"
+                                  width={12}
+                                  height={12}
+                                  className="mr-1"
+                                />
+                                <span>Waste Management</span>
+                              </Link>
+                            </li>
+                            <li className="mr-4">
+                              <Link
+                                className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                                href="https://www.rkctrust.com"
+                              >
+                                <Image
+                                  src="/assets/icons/link.svg"
+                                  alt="Link Icon"
+                                  width={12}
+                                  height={12}
+                                  className="mr-1"
+                                />
+                                <span>D Campaign</span>
+                              </Link>
+                            </li>
+                            <li className="mr-4">
+                              <Link
+                                className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                                href="https://www.rkctrust.com"
+                              >
+                                <Image
+                                  src="/assets/icons/link.svg"
+                                  alt="Link Icon"
+                                  width={12}
+                                  height={12}
+                                  className="mr-1"
+                                />
+                                <span>Wedding Planner</span>
+                              </Link>
+                            </li>
+                          </ul>
                           <ul className="mt-2 flex flex-wrap">
                             <li className="mr-1.5 mt-2">
                               <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
@@ -249,7 +301,7 @@ const Home = () => {
                 <div className="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
                   <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
                   <header className="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2">
-                    2023 — 2024
+                    Feb 2023 — Jun 2023
                   </header>
                   <div className="z-10 sm:col-span-6">
                     <h3 className="font-medium leading-snug text-slate-200"></h3>
@@ -257,6 +309,8 @@ const Home = () => {
                       <Link
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                         href="https://www.way2agribusiness.com/"
+                        aria-label="Way2agribusness Pvt Ltd Website"
+                        target="_blank"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
@@ -266,15 +320,14 @@ const Home = () => {
                             Way2agribusiness India Pvt Ltd, Bangalore
                           </span>
                           <p className="mt-2 text-sm leading-normal">
-                            Migrated a PHP-based website to a modern
-                            Django-React (Next.js) stack, enhancing scalability
-                            and user experience. Built a MERN stack e-commerce
-                            app for agricultural products, significantly
-                            improving digital sales channels. Deployed multiple
-                            websites on DigitalOcean, optimizing for uptime and
-                            performance. Developed SEO-friendly Next.js
-                            applications, increasing web traffic and boosting
-                            visibility.
+                            Migrated a legacy PHP website to a modern
+                            Django-React (Next.js) e-commerce platform,
+                            enhancing user experience and scalability. Deployed
+                            and optimized websites on DigitalOcean, ensuring
+                            high uptime and performance. Developed SEO-friendly
+                            Next.js applications, boosting web traffic and
+                            visibility, while contributing to both frontend and
+                            backend development in an agile environment.
                           </p>
                           <ul className="mt-2 flex flex-wrap">
                             <li className="mr-1.5 mt-2">
@@ -338,6 +391,8 @@ const Home = () => {
                       <Link
                         href="https://www.youthoppia.com/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        aria-label="Waste management App"
+                        target="_blank"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>{`Waste Management App`}</span>
@@ -345,10 +400,13 @@ const Home = () => {
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Developed the backend using Node.js and PostgreSQL.
-                      Integrated PayPal for wallet and payment processing. Built
-                      features for waste collection, user and collector
-                      management, notifications, and multi-country support.
+                      Built a comprehensive waste management platform using
+                      Node.js and PostgreSQL, supporting multi-country
+                      operations. Integrated PayPal and country-specific payment
+                      gateways like Chapa, along with wallet features. Developed
+                      waste collection, user and collector management, real-time
+                      notifications, and analytics dashboards for revenue and
+                      operational insights.
                     </p>
                     {/* <a
                       className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
@@ -374,6 +432,8 @@ const Home = () => {
                       <Link
                         href="https://www.meticulousbeaver.com/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        aria-label="Wedding planner website"
+                        target="_blank"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>Wedding Planner E-commerce Website</span>{" "}
@@ -381,10 +441,11 @@ const Home = () => {
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Built backend services using Next.js and Zoho One for
-                      inventory management. Integrated Razorpay for secure
-                      online payments and used DynamoDB for storing
-                      Zoho-generated tokens.
+                      Developed backend services with Next.js and Zoho One for
+                      streamlined inventory management and order processing.
+                      Integrated Razorpay for secure payments and leveraged
+                      DynamoDB to store Zoho tokens, ratings, and reviews,
+                      optimizing API efficiency and platform scalability.
                     </p>
                   </div>
                   <Image
@@ -404,6 +465,8 @@ const Home = () => {
                       <Link
                         href="https://www.rkctrust.com/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        aria-label="Donation campaign website"
+                        target="_blank"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>Donation Campaign Website (RKCTRUST)</span>{" "}
@@ -483,20 +546,12 @@ const Home = () => {
             </ul>
           </div>
         </section> */}
-        {/* <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
-          <p>
-            Loosely designed in {""}
-            <Link
-              href="/"
-              className="font-medium text-slate-400 hover:text-teal-300 focus-visible:text-teal-300"
-            >
-              Figma
-            </Link>
-            Loosely designed in Figma and coded in Visual Studio Code by yours
-            truly. Built with Next.js and Tailwind CSS, deployed with Vercel.
-            All text is set in the Inter typeface.
-          </p>
-        </footer> */}
+        <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
+          <h4>Get In Touch</h4>
+          <Link href="mailto:akashrp512@gmail.com">
+            <button>Say Hello</button>
+          </Link>
+        </footer>
       </main>
     </div>
   );
