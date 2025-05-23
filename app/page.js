@@ -15,11 +15,10 @@ const Home = () => {
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
             Full-Stack Developer: React, Node.js, and AWS
           </h2>
-          <p className="mt-4 max-w-xs leading-normal text-slate-400">
-            I'm a dedicated full-stack developer with a strong focus on building
-            scalable and efficient web applications using React, Node.js, and
-            AWS. I love crafting responsive interfaces and robust backend
-            systems.
+          <p className="mt-4 max-w-xs text-justify leading-normal text-slate-400">
+            Full Stack Developer based in Bangalore with 2 years
+            of experience building robust, cloud-based applications that scale.
+            My core strength lies in backend engineering with Node.js, PostgreSQL, and AWS, and I equally enjoy crafting seamless frontend experiences using React, TypeScript, and TailwindCSS.
           </p>
           <nav className=" hidden lg:block ">
             <ul className="mt-16 w-max">
@@ -122,12 +121,15 @@ const Home = () => {
           </div>
           <div>
             <p className="mb-4">
-              My journey into web development began in 2023 when I shifted from
+              {/* My journey into web development began in 2023 when I shifted from
               working on college projects to tackling real-world software
               development challenges. Since then, I've worked on diverse
               projects such as the Waste Management App, Wedding Planner
-              E-commerce, and Donation Campaign Websites
-              <Link
+              E-commerce, and Donation Campaign Websites */}
+              Bangalore-based Full Stack Developer with 2 years of experience building scalable, cloud-based applications with a strong foundation in backend engineering and frontend architecture.
+              I specialize in developing robust RESTful APIs using Node.js, Express, and PostgreSQL, and have hands-on experience integrating cloud services like AWS Lambda, S3, RDS, and EC2. On the frontend,
+              I craft responsive and accessible user interfaces using React, TypeScript, and TailwindCSS.
+              {/* <Link
                 href="https://www.youthoppia.com/"
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
                 aria-label="Waste management App"
@@ -152,12 +154,10 @@ const Home = () => {
                 target="_blank"
               >
                 Donation Campaign
-              </Link>
+              </Link> */}
             </p>
             <p className="mb-4">
-              I am dedicated to full-stack development, where I create dynamic,
-              responsive frontend interfaces with React while architecting
-              backend systems with Node.js and PostgreSQL.
+              I’ve contributed to SaaS platforms across waste management, EdTech, and e-commerce, focusing on performance, reliability, and clean code. From building real-time interview bots with AI/ML APIs like OpenAI Whisper to optimizing backend workflows with Redis and Google Maps APIs, I’m passionate about leveraging modern tools to solve real-world problems and deliver seamless user experiences.
             </p>
             <p className="mb-4">
               When I’m not coding, I stay up to date with the latest technology
@@ -226,6 +226,21 @@ const Home = () => {
                                   className="mr-1"
                                 />
                                 <span>Waste Management</span>
+                              </Link>
+                            </li>
+                            <li className="mr-4">
+                              <Link
+                                className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                                href="https://www.lifedemy.in/"
+                              >
+                                <Image
+                                  src="/assets/icons/link.svg"
+                                  alt="Link Icon"
+                                  width={12}
+                                  height={12}
+                                  className="mr-1"
+                                />
+                                <span>Lifedemy</span>
                               </Link>
                             </li>
                             <li className="mr-4">
@@ -391,11 +406,11 @@ const Home = () => {
                       <Link
                         href="https://www.youthoppia.com/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        aria-label="Waste management App"
+                        aria-label="Waste management Platform (Youcan)"
                         target="_blank"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                        <span>{`Waste Management App`}</span>
+                        <span>{`Waste Management Platform - Youcan`}</span>
                         {/* <span className="inline-block">{` App (Icon)`}</span> */}
                       </Link>
                     </h3>
@@ -416,7 +431,37 @@ const Home = () => {
                     </a> */}
                   </div>
                   <Image
-                    src="/assets/youcan-admin-dashboard.png"
+                    src="/assets/youcan.png"
+                    alt="image"
+                    className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                    width={200}
+                    height={150}
+                  />
+                </div>
+              </li>
+              <li className="mb-12">
+                <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div className="z-10 sm:order-2 sm:col-span-6">
+                    <h3>
+                      <Link
+                        href="https://talentberry.in/"
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        aria-label="AI based Interview platform"
+                        target="_blank"
+                      >
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>AI based Interview Platform - TalentBerry</span>{" "}
+                        {/* <span className="inline-block">App (Icon)</span> */}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 text-sm leading-normal">
+                      Developed a Robust Mock Interview platform for candidates to take interview with help of AI and gets
+                      hospitals. Developed the candidate onboarding, conversation with AI role play and report generation tool
+                    </p>
+                  </div>
+                  <Image
+                    src="/assets/talentberry.png"
                     alt="image"
                     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                     width={200}
@@ -463,25 +508,22 @@ const Home = () => {
                   <div className="z-10 sm:order-2 sm:col-span-6">
                     <h3>
                       <Link
-                        href="https://www.rkctrust.com/"
+                        href="https://www.lifedemy.in/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                        aria-label="Donation campaign website"
+                        aria-label="life coaching ed-tech platform"
                         target="_blank"
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
-                        <span>Donation Campaign Website (RKCTRUST)</span>{" "}
+                        <span>Ed-Tech Platform - Lifedemy</span>{" "}
                         {/* <span className="inline-block">App (Icon)</span> */}
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Created a Next.js donation website for clinics and
-                      hospitals. Developed the admin portal for managing
-                      donation campaigns, ensuring efficient management and
-                      accessibility.
+                      Built analytics APIs for admin reporting. This involved creating complex queries across multiple tables to analyze engagement patterns for approximately 100,000 users on a course-by-episode basis.
                     </p>
                   </div>
                   <Image
-                    src="/assets/rkct-hero.png"
+                    src="/assets/lifedemy.png"
                     alt="image"
                     className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
                     width={200}
