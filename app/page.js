@@ -13,13 +13,10 @@ const Home = () => {
           </h1>
 
           <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-            Full-Stack Developer: React, Node.js, and AWS
+            Backend Engineer | APIs • AWS • Node.js
           </h2>
           <p className="mt-4 max-w-xs text-justify leading-normal text-slate-400">
-            Full Stack Developer based in Bangalore with 2 years
-            of experience building robust, cloud-based applications that scale.
-            My core strength lies in backend engineering with Node.js, PostgreSQL, and AWS, and I equally enjoy crafting seamless frontend experiences using React, TypeScript, and TailwindCSS.
-          </p>
+            I build reliable, scalable backend systems and cloud-native APIs that solve real-world problems. My work focuses on Node.js, PostgreSQL, and AWS, powering SaaS products with high performance and maintainability. I enjoy tackling backend challenges from API design to asynchronous workflows and real-time features.          </p>
           <nav className=" hidden lg:block ">
             <ul className="mt-16 w-max">
               <li>
@@ -126,10 +123,7 @@ const Home = () => {
               development challenges. Since then, I've worked on diverse
               projects such as the Waste Management App, Wedding Planner
               E-commerce, and Donation Campaign Websites */}
-              Bangalore-based Full Stack Developer with 2 years of experience building scalable, cloud-based applications with a strong foundation in backend engineering and frontend architecture.
-              I specialize in developing robust RESTful APIs using Node.js, Express, and PostgreSQL, and have hands-on experience integrating cloud services like AWS Lambda, S3, RDS, and EC2. On the frontend,
-              I craft responsive and accessible user interfaces using React, TypeScript, and TailwindCSS.
-              {/* <Link
+              I am a backend-focused engineer based in Bengaluru with 3 years of experience building production-grade systems. I’ve contributed to multiple SaaS and enterprise platforms where reliability, data integrity, and performance matter.              {/* <Link
                 href="https://www.youthoppia.com/"
                 className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
                 aria-label="Waste management App"
@@ -157,13 +151,9 @@ const Home = () => {
               </Link> */}
             </p>
             <p className="mb-4">
-              I’ve contributed to SaaS platforms across waste management, EdTech, and e-commerce, focusing on performance, reliability, and clean code. From building real-time interview bots with AI/ML APIs like OpenAI Whisper to optimizing backend workflows with Redis and Google Maps APIs, I’m passionate about leveraging modern tools to solve real-world problems and deliver seamless user experiences.
-            </p>
+              My strengths include designing clean RESTful APIs, optimizing database workflows, and implementing cloud services using AWS (Lambda, S3, RDS, EC2). I write backend modules that are observable, maintainable, and built for scale. I use Redis for caching and queues, and integrate real-time features using Firebase or WebSockets when business needs require event-driven communication. </p>
             <p className="mb-4">
-              When I’m not coding, I stay up to date with the latest technology
-              trends, experiment with new tools, attend tech meetups, or enjoy
-              reading, cooking, and watching drama or action movies.
-            </p>
+              Across domains like waste management, healthcare, and ed-tech, I enjoy improving systems that make life easier for users while keeping engineering quality high.            </p>
           </div>
         </section>
         <section
@@ -200,15 +190,7 @@ const Home = () => {
                             ThinkJS Pvt Ltd, Bangalore
                           </span>
                           <p className="mt-2 text-sm leading-normal">
-                            Developed scalable backend systems for the waste
-                            management platform, integrating payment gateways
-                            like PayPal and leveraging AWS services (S3, SES,
-                            SNS, Lambda, EC2, DynamoDB). Optimized performance
-                            with advanced features like spatial proximity search
-                            and real-time notifications, collaborating with
-                            cross-functional teams to ensure seamless
-                            integration and timely delivery.
-                          </p>
+                            At ThinkJS, I work on backend development for SaaS and enterprise platforms. My responsibilities include building and maintaining REST APIs, implementing background job workflows, and integrating cloud services using AWS. I have contributed to systems involving geospatial logic, payment integrations, real-time updates, and scalable backend infrastructure, ensuring performance and reliability in production environments.                          </p>
                           <ul
                             className="mt-2 flex flex-wrap"
                             area-label="Related links"
@@ -335,14 +317,7 @@ const Home = () => {
                             Way2agribusiness India Pvt Ltd, Bangalore
                           </span>
                           <p className="mt-2 text-sm leading-normal">
-                            Migrated a legacy PHP website to a modern
-                            Django-React (Next.js) e-commerce platform,
-                            enhancing user experience and scalability. Deployed
-                            and optimized websites on DigitalOcean, ensuring
-                            high uptime and performance. Developed SEO-friendly
-                            Next.js applications, boosting web traffic and
-                            visibility, while contributing to both frontend and
-                            backend development in an agile environment.
+                            During my internship, I worked on modernizing parts of a legacy system by migrating features to a Node.js and Next.js-based stack. I built backend APIs, supported frontend development, and handled deployments and optimizations on cloud servers, gaining end-to-end product exposure.
                           </p>
                           <ul className="mt-2 flex flex-wrap">
                             <li className="mr-1.5 mt-2">
@@ -404,6 +379,41 @@ const Home = () => {
                   <div className="z-10 sm:order-2 sm:col-span-6">
                     <h3>
                       <Link
+                        href="https://www.iqvia.com/"
+                        className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
+                        aria-label="Waste management Platform (Youcan)"
+                        target="_blank"
+                      >
+                        <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                        <span>{`IQVIA NextGen Speaker Bureau (Healthcare Platform)`}</span>
+                        {/* <span className="inline-block">{` App (Icon)`}</span> */}
+                      </Link>
+                    </h3>
+                    <p className="mt-2 text-sm leading-normal">
+                      A large-scale healthcare engagement platform used to manage speaker programs and related workflows. I worked on backend systems supporting complex engagement lifecycles, including scheduling, task automation, and compliance-related tracking. My contributions involved building and maintaining REST APIs, implementing event-driven workflows, and integrating real-time updates across web and mobile applications. The platform required high reliability, data consistency, and traceability to support enterprise and healthcare compliance standards.
+                    </p>
+                    {/* <a
+                      className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
+                      href="/"
+                    >
+                      <span>70k Users</span>
+                    </a> */}
+                  </div>
+                  <Image
+                    src="/assets/iqvia.svg"
+                    alt="image"
+                    className="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1"
+                    width={200}
+                    height={150}
+                  />
+                </div>
+              </li>
+              <li className="mb-12">
+                <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+                  <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                  <div className="z-10 sm:order-2 sm:col-span-6">
+                    <h3>
+                      <Link
                         href="https://www.youthoppia.com/"
                         className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
                         aria-label="Waste management Platform (Youcan)"
@@ -415,13 +425,7 @@ const Home = () => {
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Built a comprehensive waste management platform using
-                      Node.js and PostgreSQL, supporting multi-country
-                      operations. Integrated PayPal and country-specific payment
-                      gateways like Chapa, along with wallet features. Developed
-                      waste collection, user and collector management, real-time
-                      notifications, and analytics dashboards for revenue and
-                      operational insights.
+                      A SaaS platform designed to manage waste collection and recycling workflows. I worked on backend systems that supported user, driver, and admin applications, focusing on API development, cloud integrations, background processing, and geospatial features.
                     </p>
                     {/* <a
                       className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300"
@@ -456,8 +460,7 @@ const Home = () => {
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Developed a Robust Mock Interview platform for candidates to take interview with help of AI and gets
-                      hospitals. Developed the candidate onboarding, conversation with AI role play and report generation tool
+                      A platform built to conduct and manage technical interviews using AI-powered tools. I contributed to backend workflows, API integrations, and system components designed to handle interview data efficiently and securely.
                     </p>
                   </div>
                   <Image
@@ -486,11 +489,7 @@ const Home = () => {
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Developed backend services with Next.js and Zoho One for
-                      streamlined inventory management and order processing.
-                      Integrated Razorpay for secure payments and leveraged
-                      DynamoDB to store Zoho tokens, ratings, and reviews,
-                      optimizing API efficiency and platform scalability.
+                      An e-commerce application for managing wedding-related services and bookings. I worked on backend APIs for product management, orders, and checkout flows, ensuring scalability and smooth user experiences.
                     </p>
                   </div>
                   <Image
@@ -519,8 +518,7 @@ const Home = () => {
                       </Link>
                     </h3>
                     <p className="mt-2 text-sm leading-normal">
-                      Built analytics APIs for admin reporting. This involved creating complex queries across multiple tables to analyze engagement patterns for approximately 100,000 users on a course-by-episode basis.
-                    </p>
+                      An online learning platform focused on courses and user engagement. I developed backend APIs for analytics and reporting features, helping track user activity and improve platform insights.                    </p>
                   </div>
                   <Image
                     src="/assets/lifedemy.png"
@@ -589,7 +587,7 @@ const Home = () => {
           </div>
         </section> */}
         <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
-          <h4>Get In Touch</h4>
+          <h4>Open to backend engineering roles and cloud-focused opportunities.</h4>
           <Link href="mailto:akashrp512@gmail.com">
             <button>Say Hello</button>
           </Link>
